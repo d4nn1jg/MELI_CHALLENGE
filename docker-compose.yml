@@ -7,3 +7,15 @@ services:
             - "3306:3306"
         environment:
             MARIADB_ROOT_PASSWORD: root
+            MYSQL_DATABASE: meli
+    app:
+        container_name: meliapp
+        build:
+            context: .
+            dockerfile: ./app.dockerfile
+        ports:
+            - "80:80"
+    
+  
+
+

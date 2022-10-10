@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-import database
-from consultarJson import *
+import app.database
+from app.consultarJson import *
 
 
 cargar_datos = APIRouter()
@@ -11,7 +11,7 @@ def read_getUser():
     dataJson = parsearJson(datosRaw)
     dataModified = modifyData(dataJson)
     dataframe = jsontopanda(dataModified)
-    conn = database.connDB()
+    conn = app.database.connDB()
     print(dataframe)
     dataframe.to_sql("meliData",con=conn,if_exists="replace")
     result= "OK"

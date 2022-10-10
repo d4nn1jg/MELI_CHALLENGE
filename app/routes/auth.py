@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Header
 from pydantic import BaseModel
-from funcions import write_token, validate_token
+from app.funcions import write_token, validate_token
 from fastapi.responses import JSONResponse
 
 auth_routes = APIRouter ()

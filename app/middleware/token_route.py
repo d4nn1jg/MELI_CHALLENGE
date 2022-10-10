@@ -1,5 +1,5 @@
 from fastapi import Request
-from funcions import validate_token
+from app.funcions import validate_token
 from fastapi.routing import APIRoute
 
 

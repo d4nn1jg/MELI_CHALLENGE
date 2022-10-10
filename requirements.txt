@@ -1,0 +1,12 @@
+fastapi>=0.68.0,<0.69.0
+pydantic>=1.8.0,<2.0.0
+uvicorn>=0.15.0,<0.16.0
+routes>=0
+pyjwt>=2
+pydantic[email]>=0
+pandas>=1.5
+cryptography>=38
+sqlalchemy>=1
+requests>=2
+python-dotenv>=0
+pymysql>=0
